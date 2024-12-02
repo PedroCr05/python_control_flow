@@ -176,18 +176,144 @@ elif val == 3:
 else:
     print('not one, two, or three')
 #/---------------[I do Section]------------------/#
-color = input('Enter "green", "yellow", "red": ').lower()
-print(f'The user entered {color}')
+# color = input('Enter "green", "yellow", "red": ').lower()
+# print(f'The user entered {color}')
 
-if color == 'green':
-    print (f'User has chosen the color {color}.')
-elif color == 'yellow':
-    print (f"User's input was {color}.")
-elif color == 'red':
-    print (f"The input selected by the user was {color}.")
-else:
-    print(f'The color {color} is not apart of the original selection.')
+# if color == 'green':
+#     print (f'User has chosen the color {color}.')
+# elif color == 'yellow':
+#     print (f"User's input was {color}.")
+# elif color == 'red':
+#     print (f"The input selected by the user was {color}.")
+# else:
+#     print(f'The color {color} is not apart of the original selection.')
 
 #/-----------------------------------------------/#
 
+"""
+ A JavaScript for loop
+for (let i = 0; i < 10; i++) {
+ do something ten times
+}
 
+JS's for loop
+"""
+
+names = ["Emily", "Jack", "Sophia", "Ethan"]
+
+for name in names:
+    print(name)
+
+'''
+let names = ["Emily", "Jack", "Sophia", "Ethan"];
+for (name of names) {
+  console.log(name);
+}
+
+This here is the same exact way of JS's for of.
+Which I've never personally used or knew about.
+Now I know.
+'''
+
+num = 1
+
+while num <= 10:
+    print(num)
+    # prints the numbers 1 through 10
+    num += 1
+
+"""
+Should be simple to see but this is a while loop right above.
+"""
+
+things = ["computer", "g-g-ghost", "chair", "spider", "desk"]
+
+for thing in things:
+    if thing == "g-g-ghost":
+        print("Oh, that's just my ghost friend, carry on.")
+        continue
+    elif thing == "spider":
+        print("Nope. Burn it down, no more.")
+        break
+    print(f"There is a {thing} in the room.")
+
+#/---------------[I do Section]------------------/#
+
+# list_of_colors = ["green", "yellow", "red"]
+# color = input(f'Enter {list_of_colors}: ').lower()
+# print(f'The user entered {color}')
+
+# while color:
+#     if color == 'green':
+#         print (f'User has chosen the color {color}.')
+#     elif color == 'yellow':
+#         print (f"User's input was {color}.")
+#     elif color == 'red':
+#         print (f"The input selected by the user was {color}.")
+#         continue
+#     elif color != list_of_colors:
+#         print(f'The color {color} is not apart of the original selection.')
+#     elif color == 'quit':
+#         print(f'You have {color} the program. Good bye! Beep Boop.')
+#         break
+
+'''
+So clearly I'm doing this incorrectly but I'll leave this here so I can compare and see what I'm doing :b
+
+Edit: Just realized that continue and break is like the concept of try and catch in JS. Not the same way but the purpose of what it does.
+
+Gave up but would 100% want to see in the future if I can solve it the way I have it above.
+'''
+
+while True:
+    color = input('Enter "green", "yellow", "red", or type "quit": ').lower()
+    print(f'The user entered {color}')
+
+    if color == 'green':
+        print (f'User has chosen the color {color}.')
+    elif color == 'yellow':
+        print (f"User's input was {color}.")
+    elif color == 'red':
+        print (f"The input selected by the user was {color}.")
+    elif color == 'quit':
+        print ("You've shut down the program!")
+        break
+    else:
+        print(f'The color {color} is not apart of the original selection.')
+
+#/-----------------------------------------------/#
+
+# time_of_day = 9
+time_of_day = 13
+
+morning = True if time_of_day < 12 else False
+print(morning)
+#True
+
+# This is ternary for python
+
+#/-----------------------------------------------/#
+
+for num in range(5):
+    print(num)
+    # prints the integers: 0, 1, 2, 3, 4
+
+# Range always starts with 0 if not predefined with a preset num
+
+for even in range(4, 12, 2):
+    print(even)
+    # prints the integers: 4, 6, 8, 10
+
+# range(Starting num, The limit num, by how many it counts)
+
+nums = list(range(10))
+print(nums)
+# prints: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# You can attach functions onto range so it can add, For example here we are creating 10 elements inside a list
+
+for num in range(5, 0, -1):
+    print(num)
+    # prints the integers: 5, 4, 3, 2, 1
+
+# Negative numbers are a possibility (Stepping back). Pretty neat!
